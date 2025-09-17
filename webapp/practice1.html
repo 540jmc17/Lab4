@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Short description of the page" />
+
+  <title>THE HTML Page</title>
+
+</head>
+<body>
+  <!-- Site header / navigation -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <!-- Main page content -->
+  <main role="main">
+    <h1>Welcome</h1>
+    <p>Welcome to the home page!!!!!!!!!.</p>
+
+    <!-- Example image with alt text -->
+    <img src="dog.png" alt="Doggy!!!" />
+
+<header>
+    <h1>Is The Doberman Right For You?!?!?!</h1>
+    <p>Check out this awesome video below!</p>
+  </header>
+
+  <!-- Video -->
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/XRxxWjRe99A"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+    
+  </main>
+
+  <!-- Site footer -->
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> Your Boyyyy Jake Crawford</p>
+  </footer>
+
+  <!-- JavaScript (deferred behavior: place before closing body or use `defer` in head) -->
+  <script>
+    // Small helper to set the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
